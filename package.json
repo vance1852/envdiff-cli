@@ -1,0 +1,30 @@
+{
+  "name": "envdiff-cli",
+  "version": "1.0.0",
+  "description": "环境变量配置漂移检测CLI工具",
+  "main": "dist/index.js",
+  "bin": {
+    "envdiff": "dist/bin/envdiff.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.0"
+  },
+  "keywords": ["env", "diff", "cli", "environment-variables"],
+  "author": "",
+  "license": "MIT"
+}
